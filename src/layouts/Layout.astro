@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import '@fontsource/poppins';
+import Footer from '../components/footer.astro';
 ---
 
 <!doctype html>
@@ -19,6 +20,7 @@ import '@fontsource/poppins';
 	</head>
 	<body>
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
@@ -29,5 +31,20 @@ import '@fontsource/poppins';
     background-position: center;
     z-index: 999;
     position: sticky;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #080c1c;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #111b4c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #080331;
 }
 </style>
