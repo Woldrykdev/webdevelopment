@@ -1,0 +1,103 @@
+<section class="animate-blurred-fade-in">
+    <div class="container">
+        <div class="info">
+            <div class="caja">
+                <img src="/support.svg" alt="imagen">
+                <h3>Personalized Support</h3>
+                <p>My partnership with you doesn't end at deployment. I provide ongoing support and maintenance to keep your digital assets running smoothly and securely.</p>
+            </div>
+            
+            <div class="caja">
+                <img src="/dev.svg" alt="imagen">
+                <h3>Agile Development</h3>
+                <p>I follow agile methodologies to deliver results quickly and adapt to your evolving requirements, keeping you ahead of the competition.</p>
+            </div>
+            
+            <div class="caja">
+                <img src="/solution.svg" alt="imagen">
+                <h3>Customized Solutions</h3>
+                <p>Your business is unique, which is why I take a personalized approach to every project. From e-commerce platforms to SaaS applications, I bring your vision to life.</p>
+            </div>
+            
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 15px; /* Added padding for responsiveness */
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to new line */
+        justify-content: center;
+        gap: 30px; /* Added gap between items */
+    }
+
+    .caja {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(31, 10, 65, 0.118);
+        width: calc(25% - 25px); /* Adjusted width for responsive layout */
+        min-width: 250px; /* Minimum width for each box */
+        max-width: 350px; /* Maximum width for each box */
+        margin: 15px;
+        padding: 20px;
+        border: 2px solid #09033e;
+        border-radius: 30px;
+        margin-bottom: 15vh;
+    }
+
+    .caja img {
+        width: 60px;
+        margin: 0 auto;
+        display: block;
+        padding: 5px;
+        background-color: rgba(8, 7, 71, 0.15);
+        border: 2px solid #111b4c;
+        border-radius: 24px;
+    }
+
+    .caja h3 {
+        font-weight: bold;
+        font-size: large;
+        color: white;
+        margin-top: 10px; /* Added margin for better spacing */
+    }
+
+    .caja p {
+        padding: 10px;
+        font-size: 14px; /* Increased font size for better readability */
+        line-height: 1.5rem;
+        color: white;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .caja {
+            width: calc(70% - 30px); /* Two boxes per line on smaller screens */
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .caja {
+            width: 100%; /* Full width for each box on smaller screens */
+            max-width: none; /* Remove max-width on smaller screens */
+        }
+    }
+</style>
